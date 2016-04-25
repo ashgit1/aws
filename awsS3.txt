@@ -1,0 +1,37 @@
+Hosting a Static Website:
+-------------------------
+
+Link : http://docs.aws.amazon.com/gettingstarted/latest/swh/getting-started-hosting-your-website.html
+
+Steps:
+======
+
+# Create the buckets for your website
+# Configure your buckets
+# Deploy your website
+# Clean up
+
+Amazon S3 requires that you give your bucket the same name as your domain.
+
+Creating Bucket:
+----------------
+
+Actual Busket Name   : ashishkg.com
+Log Files Bucket     : logs.ashishkg.com
+www subdomain busket : www.ashishkg.com
+
+Static Website Hosting Endpoint:
+---------------------------------
+
+root link 	  : http://ashishkg.com.s3-website-us-west-2.amazonaws.com
+subdomainlink : http://www.ashishkg.com.s3-website-us-west-2.amazonaws.com --> re-directed to the above root link.
+
+Additional Information:
+-----------------------
+
+1. Deploy a static website – Host your static website using the Amazon Simple Storage Service (Amazon S3).
+2. Associate your domain name with your website – You can use Amazon Route 53 to tell the Domain Name System (DNS) where to find the resources for your domain, such as your website content in Amazon S3.
+3. Speed up your website – Use Amazon CloudFront to create a content delivery network (CDN) that makes your website content available from data centers around the world, called edge locations.
+
+
+After done with Hands-On delete the bucket to avoid charges.

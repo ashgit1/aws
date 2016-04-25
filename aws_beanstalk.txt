@@ -1,0 +1,34 @@
+Deploying a Web App Using Elastic Beanstalk:
+--------------------------------------------
+
+Link : http://docs.aws.amazon.com/gettingstarted/latest/deploy/overview.html
+
+Elastic Beanstalk is a high-level deployment tool that helps you get an app from your desktop to the web in a matter of minutes. 
+Elastic Beanstalk handles the details of your hosting environment—capacity provisioning, load balancing, scaling, and application health monitoring—so you don't have to.
+Elastic Beanstalk supports apps developed in Java, PHP, .NET, Node.js, Python, and Ruby, as well as different container types for each language.
+
+Policy Name: ElasticBeanstalkStartupPolicy
+
+Role Name  : ElasticBeanstalkStartupRole
+
+Environment Information: 
+------------------------
+
+Environment name : myAshStartupApp-env
+Environment URL  : myashstartupapp-env.us-west-2.elasticbeanstalk.com
+
+Url of the my-app : http://myashstartupapp-env.us-west-2.elasticbeanstalk.com/
+
+Conclusion:
+===========
+
+Successfully Deployed a Node.js project using the deployment tool called Elastic BeanStalk bu following the tutorial.
+@ http://docs.aws.amazon.com/gettingstarted/latest/deploy/overview.html
+
+After the Hands-On:
+-------------------
+
+Delete AWS Elastic Beanstalk Resources
+Delete the Amazon DynamoDB Table
+Delete the Amazon SNS Resources
+

@@ -1,0 +1,116 @@
+AWS Account Number:
+-------------------
+Account Number : 647963888007
+
+IAM group Name: 
+---------------
+Group Name : mbadmin 
+Policies   : arn:aws:iam::aws:policy/AdministratorAccess
+
+Users in the group: ashishkg | Ashish@123
+
+IAM url : https://647963888007.signin.aws.amazon.com/console/	
+[We can change the url to contain your company name rather than account #] Ref:
+(http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.html)
+
+IAM Console: https://console.aws.amazon.com/iam/home?#home
+			 https://console.aws.amazon.com/iam/home?#home
+
+EC2 DashBoard: https://us-west-2.console.aws.amazon.com/ec2/v2/home?region=us-west-2#
+
+
+Key Pair:
+---------
+
+Key-Pair Name: ashishkg-key-pair-oregon
+file-name : ashishkg-key-pair-oregon.pem
+
+If you will use an SSH client on a Mac or Linux computer to connect to your Linux instance, use the following command to set the permissions of your private key file so that only you can read it.
+
+$ chmod 400 ashishkg-key-pair-oregon.pem
+
+
+Connecting to our Linux Instance from Windows:
+----------------------------------------------
+
+If we use putty to connect to our Linux instance we need to convert the .pem file to .ppk file.
+There is procedure using puttyGem.
+
+VPC:
+----
+
+Supported Platforms : VPC
+Default VPC : vpc-851cc3e1
+
+Create a Security Group:
+------------------------
+
+Security groups act as a firewall for associated instances, controlling both inbound and outbound traffic at the instance level.
+Security groups are specific to a region, so you should select the same region in which you created your key pair.
+
+Security group: ashishkg_SG_oregon
+description: My security group.
+
+Adding Rule to SG: Added SSH rule with Source as Custom IP Address: What is my IP(Public).
+
+Connecting through Putty:
+-------------------------
+DNS: ec2-52-38-250-254.us-west-2.compute.amazonaws.com
+	 ec2-52-38-8-168.us-west-2.compute.amazonaws.com
+	 ec2-52-36-211-16.us-west-2.compute.amazonaws.com
+
+Instance Id : i-76a442b0
+			  i-76a442b0
+
+HostName : ec2-user@ec2-52-38-250-254.us-west-2.compute.amazonaws.com
+		   ec2-user@ec2-52-38-8-168.us-west-2.compute.amazonaws.com
+		   ec2-user@ec2-52-36-211-16.us-west-2.compute.amazonaws.com
+Port	 : 22 
+Expand Connection, expand SSH, and then select Auth --> .ppk file that you generated for your key pair, and then click Open.
+After Connected : [ec2-user@ip-172-31-18-179 ~]$
+
+PSCP File transfer:
+-------------------
+
+The following example transfers the file Sample_file.txt from a Windows computer to the /usr/local directory on a Linux instance:
+
+C:\> pscp -i C:\Keys\my-key-pair.ppk C:\Sample_file.txt user_name@public_dns:/usr/local/Sample_file.txt
+
+C:\> pscp -i C:\Ashish\Documents\personal\docs\2016CheckList\April\aws\ashishkg-key-pair-oregon.ppk C:\Ashish\Sample.txt ec2-user@ec2-52-38-250-254.us-west-2.compute.amazonaws.com:/usr/local/Sample.txt
+
+To use PSCP, set path=C:\Program Files (x86)\Putty
+
+cmd: --> enter pscp. If it shows output then you are good to run the above command.
+
+Last Page:
+----------
+
+http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html#ec2-next-steps
+
+============
+Conclusion:
+============
+
+Launched an EC2 instance and set up apache to run one static project
+
+Terms:
+------
+Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides resizable compute capacity in the cloud. It is designed to make web-scale computing easier for developers. Amazon Elastic Block Store (EBS) provides persistent storage to Amazon EC2 instances.
+
+EBS: Elastic Block Store.
+IAM: Identity and Access management.
+VPC: Virtual Private Cloud 
+AMI: Amazon Machine Image
+PSCP: Putty Secure Copy Client
+ARN: Amazon Resource Name
+SNS: Amazon Simple Notification Service
+
+
+
+
+
+
+
+
+
+

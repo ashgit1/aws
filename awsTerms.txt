@@ -1,0 +1,57 @@
+Abbrevations:
+=============
+
+EBS: Elastic Block Store.
+IAM: Identity and Access management.
+VPC: Virtual Private Cloud 
+AMI: Amazon Machine Image
+PSCP: Putty Secure Copy Client
+ARN: Amazon Resource Name
+SNS: Amazon Simple Notification Service
+RDS: Relational Database Service
+
+Terms:
+======
+
+EC2: 
+----
+Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides resizable compute capacity in the cloud. 
+It is designed to make web-scale computing easier for developers. 
+
+EBS:
+----
+Amazon Elastic Block Store (EBS) provides persistent storage to Amazon EC2 instances.
+
+Elastic Load Balancing:
+-----------------------
+It supports health checks on hosts, distributes traffic to virtual servers across multiple isolated locations, known as Availability Zones, and dynamically adds or removes virtual servers from the load-balancing rotation.
+
+RDS:
+----
+It provides a cost-efficient and resizable database server that's easy to administer.
+
+Auto Scaling:
+-------------
+It supports groups of servers that can grow or shrink on demand.
+
+CloudWatch:
+-----------
+It collects metrics data for your virtual servers, which can be used by Auto Scaling.
+
+Route 53:
+---------
+Amazon Route 53 maps human-readable domain names to IP addresses.
+
+Security Group:
+---------------
+A security group acts as a firewall that controls the traffic allowed to reach one or more EC2 instances.
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,40 @@
+Hosting a Web App on Amazon Web Services:
+=========================================
+
+Link: http://docs.aws.amazon.com/gettingstarted/latest/wah-linux/web-app-hosting-intro.html
+
+This tutorial walks you through the process of hosting a web app on AWS. We'll use the AWS Management Console to access AWS:
+----------------------------------------------------------------------------------------------------------------------------
+
+# Create an Application Server
+# Create a Database Server
+# Deploy an App to Your Application Server
+# Scale and Load-Balance Your Web App
+# Associate a Domain Name with Your Website
+# Clean Up
+
+
+Creating your own VPC:
+----------------------
+
+VPC name: AshishVPC
+
+
+Security gripu for web server:
+------------------------------
+
+SG Name: WebServerSG
+
+New IAM Role:
+-------------
+
+Role Name: ashishkg
+
+Create a Security Group for Your DB Instance:
+---------------------------------------------
+Create a security group that allows your application server to access your database server.
+
+DB SG Name: DBServerSG
+
+
+
